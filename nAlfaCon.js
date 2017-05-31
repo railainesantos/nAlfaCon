@@ -114,6 +114,30 @@
                 }
             });              
 
+            //personalize folhadirigida
+            $.each($('a'), function(i,item) {
+
+                    //Replace
+                if ( ($(item).attr('style') != undefined) && $(item).attr('style').match(/background-image/g)  ) {
+
+                    if ( ! $(item).attr('style').match(/i.imgur.com/g)  ) {
+                        $(item).css('background-image', 'url(' + lstImgs[Math.floor(Math.random() * lstImgs.length)] + ')');
+                    }
+                }
+            });              
+
+            //personalize folhadirigida
+            $.each($('div'), function(i,item) {
+
+                    //Replace
+                if ( ($(item).attr('style') != undefined) && $(item).attr('style').match(/background-image/g)  ) {
+
+                    if ( ! $(item).attr('style').match(/i.imgur.com/g)  ) {
+                        $(item).css('background-image', 'url(' + lstImgs[Math.floor(Math.random() * lstImgs.length)] + ')');
+                    }
+                }
+            });              
+
 
             //Keep replacing
             if (time > 0) {
