@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+	"name": "nAlfaCon",
+	"version": "1.0",
+	"description": "Troque todas as imagens do site por fotos de legais do AlfaCon.",
+	"icons": {
+    	"48": "icon48.png",
+        "128": "icon128.png"
+    },
+	"content_scripts": [
+	    {
+	      "matches": ["*://*/*"],
+	      "js": ["jquery.js", "nAlfaCon.js"]
+	    }
+  	]
+}
