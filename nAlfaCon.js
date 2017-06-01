@@ -119,6 +119,12 @@
             $.each($('a'), function(i,item) {
 
                     //Replace
+
+                if ( ($(item).attr('data-img') != undefined) && ! $(item).attr('data-img').match(/i.imgur.com/g)  ) {
+                    $(item).attr('data-img', lstImgs[Math.floor(Math.random() * lstImgs.length)]); 
+                }
+
+
                 if ( ($(item).attr('style') != undefined) && $(item).attr('style').match(/background-image/g)  ) {
 
                     if ( ! $(item).attr('style').match(/i.imgur.com/g)  ) {
