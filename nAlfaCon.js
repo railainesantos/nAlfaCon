@@ -10,6 +10,7 @@
     	],
 
         nAlfaConImgs : [
+            'https://i.imgur.com/iSu0w3D.gif',
             'https://i.imgur.com/Jo8cTLu.jpg',
             'https://i.imgur.com/pb0JzbC.jpg',
             'https://i.imgur.com/dG3xTOp.jpg',
